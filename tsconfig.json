@@ -15,5 +15,6 @@
     "removeComments": false,
     "preserveConstEnums": true
   },
+  "exclude": ["node_modules", "public", ".cache"],
   "include": ["./src/**/*", "typings"]
 }

@@ -37,7 +37,8 @@
     "eslint": "^7.5.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "typescript": "^3.9.7"
   },
   "husky": {
     "hooks": {
@@ -45,7 +46,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js, jsx, ts, tsx}": [
       "prettier --config .prettierrc --write",
       "eslint --fix",
       "git add"
