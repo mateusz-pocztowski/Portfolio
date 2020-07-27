@@ -31,8 +31,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    color: ${({ theme }) => theme.white};
-    background: ${({ theme }) => theme.dark};
+    color: ${({ theme }) => theme.dark};
+    background: ${({ theme }) => theme.white};
     font-family: ${({ theme }) => theme.fonts.mainFont};
     font-size: 1.6rem;
   }
