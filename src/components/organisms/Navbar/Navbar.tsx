@@ -36,9 +36,18 @@ const InnerWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: ${({ theme }) => theme.white};
 `;
 
-const LogoWrapper = styled.div`
+const LogoWrapper = styled(Link)`
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.white};
+  text-decoration: none;
+`;
+
+const LogoInnerWrapper = styled.div`
+  display: block;
   width: 65px;
   height: 65px;
 `;
@@ -47,6 +56,12 @@ const Logo = styled.img`
   display: block;
   width: 100%;
   height: 100%;
+`;
+
+const Title = styled.h3`
+  font-size: ${({ theme }) => theme.fontSize.m};
+  font-weight: ${({ theme }) => theme.bold};
+  margin-left: 10px;
 `;
 
 const List = styled.ul`
@@ -58,7 +73,6 @@ const ListItem = styled.li<Props>`
   position: relative;
   margin-left: 35px;
   font-weight: ${({ theme }) => theme.medium};
-  color: ${({ theme }) => theme.white};
   opacity: 0;
   &:hover {
     color: ${({ theme }) => theme.blue100};
@@ -141,8 +155,15 @@ const Navbar = () => {
     <Wrapper ref={wrapperRef} isActive={isOnTop}>
       <Content>
         <InnerWrapper>
-          <LogoWrapper>
-            <Logo src={logoImg} alt="logo" />
+          <LogoWrapper to="/">
+            <LogoInnerWrapper>
+              <Logo src={logoImg} alt="logo" />
+            </LogoInnerWrapper>
+            <Title>
+              Mateusz
+              <br />
+              Pocztowski
+            </Title>
           </LogoWrapper>
           <List ref={listRef}>
             <ListItem isActive={activeLink === 'home'}>
