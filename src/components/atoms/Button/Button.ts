@@ -16,7 +16,7 @@ const pulse = keyframes`
 
 const Button = styled.button<Props>`
   display: block;
-  width: 200px;
+  width: 220px;
   padding: 20px;
   text-align: center;
   font-family: ${({ theme }) => theme.fonts.mainFont};
