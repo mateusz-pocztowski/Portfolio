@@ -85,8 +85,8 @@ const Links = ({ big }: Props) => {
       <ListItem big={big || false} isActive={activeLink === 'technologies'}>
         <StyledLink to="#technologies">Technologies</StyledLink>
       </ListItem>
-      <ListItem big={big || false} isActive={activeLink === 'portfolio'}>
-        <StyledLink to="#portfolio">Portfolio</StyledLink>
+      <ListItem big={big || false} isActive={activeLink === 'projects'}>
+        <StyledLink to="#projects">Projects</StyledLink>
       </ListItem>
       <ListItem big={big || false} isActive={activeLink === 'contact'}>
         <StyledLink to="#contact">Contact</StyledLink>
