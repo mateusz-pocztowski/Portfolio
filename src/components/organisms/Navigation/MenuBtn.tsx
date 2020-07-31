@@ -8,25 +8,10 @@ interface Props {
 
 const Button = styled.button<Props>`
   position: fixed;
+  top: 10px;
   right: 10px;
-  display: block;
+  z-index: 20;
   background-color: transparent;
-  ${({ theme }) => theme.mq.md} {
-    display: none;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    top: -192px;
-    right: -192px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: ${({ theme }) => theme.blue50};
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: 0.5s ease;
-    z-index: -1;
-  }
   ${({ isActive }) =>
     isActive &&
     css`
@@ -68,16 +53,14 @@ const SVG = styled.svg`
 `;
 
 const MenuBtn = () => {
-  const { isFullNavVisible, setIsFullNavVisible } = useContext(
-    NavigationContext
-  );
+  const { isFullNavVisible, handleFullNav } = useContext(NavigationContext);
 
-  const toggleVisibility = () => {
-    setIsFullNavVisible(!isFullNavVisible);
+  const toggleNav = () => {
+    handleFullNav(!isFullNavVisible);
   };
 
   return (
-    <Button onClick={toggleVisibility} isActive={isFullNavVisible}>
+    <Button onClick={toggleNav} isActive={isFullNavVisible}>
       <SVG viewBox="0 0 100 100" width="60">
         <LineTop d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
         <Line d="m 30,50 h 40" />
