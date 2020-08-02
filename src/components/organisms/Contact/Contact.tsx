@@ -65,7 +65,7 @@ const FormWrapper = styled.div`
 const Contact = () => {
   return (
     <>
-      <Anchor id="contact" />
+      <Anchor name="contact" />
       <Wrapper id="contact-content">
         <Content>
           <SectionHeader
