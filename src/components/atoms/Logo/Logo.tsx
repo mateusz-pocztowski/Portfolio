@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import logoImg from 'assets/images/logo.png';
 
@@ -11,12 +10,11 @@ interface ImgProps {
   readonly isWhite: boolean;
 }
 
-const Wrapper = styled(Link)`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.white};
   text-decoration: none;
-  z-index: -1;
 `;
 
 const InnerWrapper = styled.div`
@@ -46,7 +44,7 @@ const Title = styled.h3`
 `;
 
 const Logo = ({ isWhite }: Props) => (
-  <Wrapper to="/">
+  <Wrapper>
     <InnerWrapper>
       <Img isWhite={isWhite || false} src={logoImg} alt="logo" />
     </InnerWrapper>

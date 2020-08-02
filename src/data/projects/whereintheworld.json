@@ -9,6 +9,7 @@
     { "name": "Gatsby", "icon": "../../assets/icons/gatsby.svg" },
     { "name": "React & Hooks", "icon": "../../assets/icons/react.svg" },
     { "name": "Jest", "icon": "../../assets/icons/jest.svg" },
+    { "name": "Framer Motion", "icon": "../../assets/icons/framer-motion.svg" },
     { "name": "React Testing Library", "icon": "../../assets/icons/react.svg" },
     { "name": "GraphQL", "icon": "../../assets/icons/graphql.svg" },
     {
