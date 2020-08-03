@@ -1,10 +1,10 @@
 {
-  "order": 3,
+  "order": 1,
   "title": "Portfolio",
   "description": "My personal website made with Gatsby and Typescript.",
   "image": "../../assets/images/portfolio-project.png",
   "codeLink": "https://github.com/mateusz-pocztowski/Portfolio",
-  "demoLink": "https://mateusz.pocztowski.com/",
+  "demoLink": "https://mateuszpocztowski.com/",
   "withServer": false,
   "technologies": [
     { "name": "Gatsby", "icon": "../../assets/icons/gatsby.svg" },
