@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styled, { css } from 'styled-components';
 
 interface Props {
   id: string;
   value: string;
   label: string;
-  onChangeFn: () => string;
-  onBlurFn: () => boolean;
+  onChangeFn: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlurFn: (e: any) => void;
   touched: boolean | undefined;
   errors: string | undefined;
   textarea?: boolean;
 }
 
 interface InputProps {
-  readonly id: string;
-  readonly name: string;
-  readonly onChange: () => string;
-  readonly onBlur: () => boolean;
-  readonly value: string;
-  readonly invalid: boolean;
-  readonly valid: boolean;
+  id: string;
+  name: string;
+  as: ReactElement;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur: (e: any) => void;
+  value: string;
+  invalid: boolean;
+  valid: boolean;
 }
 
 interface LabelProps {
@@ -100,6 +101,7 @@ const FormInput = ({
   <InputItem>
     <StyledInput
       type="text"
+      // @ts-ignore
       as={textarea ? 'textarea' : 'input'}
       rows="6"
       id={id}
@@ -108,10 +110,10 @@ const FormInput = ({
       onChange={onChangeFn}
       onBlur={onBlurFn}
       value={value}
-      invalid={touched && errors}
-      valid={touched && !errors}
+      invalid={Boolean(touched && errors)}
+      valid={Boolean(touched && !errors)}
     />
-    <Label htmlFor={id} isInvalid={touched && errors}>
+    <Label htmlFor={id} isInvalid={Boolean(touched && errors)}>
       {(errors && touched && errors) || label}
     </Label>
   </InputItem>
