@@ -5,6 +5,7 @@
   "image": "../../assets/images/rps-project.png",
   "codeLink": "https://github.com/mateusz-pocztowski/RPS",
   "demoLink": "https://rpsls-app.netlify.app/",
+  "withServer": false,
   "technologies": [
     { "name": "Gatsby", "icon": "../../assets/icons/gatsby.svg" },
     { "name": "React & Hooks", "icon": "../../assets/icons/react.svg" },

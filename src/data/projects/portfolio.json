@@ -5,6 +5,7 @@
   "image": "../../assets/images/portfolio-project.png",
   "codeLink": "https://github.com/mateusz-pocztowski/Portfolio",
   "demoLink": "https://mateusz.pocztowski.com/",
+  "withServer": false,
   "technologies": [
     { "name": "Gatsby", "icon": "../../assets/icons/gatsby.svg" },
     { "name": "React", "icon": "../../assets/icons/react.svg" },

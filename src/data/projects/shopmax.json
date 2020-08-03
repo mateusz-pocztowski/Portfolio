@@ -5,6 +5,7 @@
   "codeLink": "https://github.com/mateusz-pocztowski/E-Commerce-Project",
   "demoLink": "https://ecommerce-shopmax.netlify.app/",
   "image": "../../assets/images/ecommerce-project.png",
+  "withServer": true,
   "technologies": [
     { "name": "React & Hooks", "icon": "../../assets/icons/react.svg" },
     { "name": "Redux", "icon": "../../assets/icons/redux.svg" },

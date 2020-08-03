@@ -5,6 +5,7 @@
   "image": "../../assets/images/whereintheworld-project.png",
   "codeLink": "https://github.com/mateusz-pocztowski/Where-in-the-world",
   "demoLink": "https://whereintheworld-app.netlify.app/",
+  "withServer": false,
   "technologies": [
     { "name": "Gatsby", "icon": "../../assets/icons/gatsby.svg" },
     { "name": "React & Hooks", "icon": "../../assets/icons/react.svg" },
