@@ -29,7 +29,7 @@ const LinkItem = styled.div`
   margin: 20px 0;
 `;
 
-const LinkName = styled.h3`
+const LinkName = styled.h4`
   font-size: ${({ theme }) => theme.fontSize.lg};
   font-weight: ${({ theme }) => theme.semiBold};
   padding: 8px 0;
@@ -84,6 +84,7 @@ const ContactLinks = () => (
         <Icon
           href="https://github.com/mateusz-pocztowski"
           target="_blank"
+          rel="noopener noreferrer"
           icon={githubIcon}
         />
       </IconWrapper>
@@ -99,6 +100,7 @@ const ContactLinks = () => (
         <Icon
           href="https://www.linkedin.com/in/mateusz-pocztowski-63a0991b2/"
           target="_blank"
+          rel="noopener noreferrer"
           icon={linkedinIcon}
         />
       </IconWrapper>
@@ -112,6 +114,7 @@ const ContactLinks = () => (
         <Icon
           href="https://www.facebook.com/mateusz.pocztowski.3/"
           target="_blank"
+          rel="noopener noreferrer"
           icon={facebookIcon}
         />
       </IconWrapper>
