@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Development`,
+    title: `Front End Developer | Portfolio`,
     description: `Front End Developer portfolio made with Gatsby and TypeScript by Mateusz Pocztowski - React Developer | Web Development`,
     author: `@matee351`,
     url: `https://mateuszpocztowski.com`,
