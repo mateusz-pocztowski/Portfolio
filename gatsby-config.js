@@ -5,6 +5,7 @@ module.exports = {
     author: `@matee351`,
     url: `https://mateuszpocztowski.com`,
     previewImage: '/preview.png',
+    language: 'en',
   },
   plugins: [
     `gatsby-plugin-typescript`,
