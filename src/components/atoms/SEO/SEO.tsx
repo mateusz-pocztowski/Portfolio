@@ -35,7 +35,7 @@ const SEO = ({ description, lang, meta, title }: Props) => {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={`${title} | Mateusz Pocztowski`}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
