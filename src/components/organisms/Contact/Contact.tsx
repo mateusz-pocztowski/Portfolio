@@ -30,7 +30,7 @@ const StatusWrapper = styled.div`
   background: ${({ theme }) => theme.dark200};
   padding: 40px 20px;
   border-radius: 10px;
-  border: 2px solid ${({ theme }) => theme.blue};
+  border: 2px solid ${({ theme }) => theme.red};
   text-align: center;
 `;
 
@@ -76,13 +76,13 @@ const Contact = () => {
         <Content>
           <SectionHeader
             title="Contact"
-            paragraph="Do you have any questions or job offer? Feel free to contact me!"
+            paragraph="Do you have any questions? Feel free to contact me!"
           />
           <InnerContent>
             <InnerWrapper>
               <StatusWrapper>
                 <Title>Status</Title>
-                <Status>Open for job offers</Status>
+                <Status>Closed for job offers</Status>
               </StatusWrapper>
               <ContactLinks />
             </InnerWrapper>
