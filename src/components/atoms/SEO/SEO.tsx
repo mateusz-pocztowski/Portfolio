@@ -40,6 +40,10 @@ const SEO = ({ description, lang, meta, title }: Props) => {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          property: `robots`,
+          content: `index, follow`,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
